@@ -1,0 +1,26 @@
+
+@mixin Rubik ($fw, $fs, $lh, $clr) {
+   font-family: 'Rubik', sans-serif;
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+   color: $clr;
+}
+
+@mixin Source ($fw, $fs, $lh, $clr) {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $clr;
+}
+
+@mixin Social  ($wht, $ht, $clr) {
+    width: $wht;
+    height: $ht;
+    background: $clr;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

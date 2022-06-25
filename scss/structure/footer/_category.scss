@@ -1,0 +1,128 @@
+.footer { 
+    width: 320px;
+    background: $black;
+
+    &__category-section {
+
+    }
+
+    &__categories-header {
+    }
+
+    &__categories-block {
+    }
+
+    &__tags {
+        position: absolute;
+        bottom: 0;
+        max-width: 135px;
+        height: 30px;
+        
+        &_it {
+            background: $it;
+        }
+
+        &_auto {
+            background: $auto;
+        }
+
+        &_art {
+            background: $art;
+        }
+
+        &_science {
+            background: $science;
+        }
+
+        &_russia {
+            background: $russia;
+        }
+
+        &_sport {
+            background: $sport;
+        }
+
+        &_network {
+            background: $network;
+        }
+
+        &_world {
+            background: $world;
+        }
+    }
+
+    &__logo-section {
+       
+    }
+
+    &__logo {
+        margin: 50px 0;
+    }
+
+    &__social-section {
+    }
+
+    &__info-section {
+        padding-bottom: 30px;
+    }
+}
+
+.footer-container {
+}
+
+.page {
+    
+    &__footer {
+
+    }
+}
+
+.category-section {
+}
+
+.footer-tag {
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+      @include Rubik (700, 14px, 17px, $white);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+}
+
+.categories-header {
+
+    &__text {
+        padding: 50px 0 23px 10px;
+        @include Rubik (700, 22px, 26px, $white)
+    }
+}
+
+.categories-block {
+    display: grid;
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, 4fr);
+
+    &__category {
+    }
+}
+.category {
+    position: relative;
+    &__category-img {
+    }
+
+    &__link {
+    }
+
+    &__img {
+        border-radius: 5px;
+    }
+}

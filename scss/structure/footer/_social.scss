@@ -1,0 +1,43 @@
+.social-section {
+
+    &__social {
+        margin-bottom: 50px;
+    }
+
+}
+
+.social-footer {
+    display: flex;
+    justify-content: space-around;
+
+    &__link {
+
+    }
+
+}
+
+.fb {
+    @include Social (40px, 40px, $fb)
+}
+
+.vk {
+    @include Social (40px, 40px, $vk)
+
+}
+.gplus {
+    @include Social (40px, 40px, $gplus)
+}
+.ok {
+    @include Social (40px, 40px, $ok)
+}
+.twitter {
+    @include Social (40px, 40px, $twitter)
+}
+.telegram {
+    @include Social (40px, 40px, $telegram)
+}
+.info-section {
+
+    &__rights {
+    }
+}

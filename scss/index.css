@@ -1,0 +1,1195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Light.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-ExtraBold.woff2") format("woff2"), url("./fonts/Rubik/Rubik-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Medium.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Bold.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Regular.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-BlackItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-ExtraBoldItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Light.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Italic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-LightItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-SemiBoldItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-SemiBold.woff2") format("woff2"), url("./fonts/Rubik/Rubik-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-LightItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-MediumItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-Black.woff2") format("woff2"), url("./fonts/Rubik/Rubik-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik/Rubik-BoldItalic.woff2") format("woff2"), url("./fonts/Rubik/Rubik-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-SemiBold.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-ExtraLight.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-Black.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-Regular.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-LightItalic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-Italic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-BlackItalic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-Light.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-Bold.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-BoldItalic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro/SourceSansPro-SemiBoldItalic.woff2") format("woff2"), url("./fonts/SourceSansPro/SourceSansPro-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+.header {
+  position: relative;
+}
+.header__top {
+  margin: 5px 20px;
+  min-width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 60px;
+}
+.header__burger-active {
+  max-height: 480px;
+  position: relative;
+  padding: 15px 10px 10px 30px;
+}
+.burger {
+  padding: 20px 0px 13px 20px;
+  position: relative;
+}
+.burger__item {
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #333333;
+  margin-bottom: 4px;
+}
+
+.header__burger_active {
+  padding: 15px 20px;
+  max-height: 480px;
+  position: relative;
+  padding: 15px 10px 10px 30px;
+}
+.header__burger_active .burger__item-elem1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);
+  width: 25.29px;
+}
+.header__burger_active .burger__item-elem2 {
+  display: none;
+}
+.header__burger_active .burger__item-elem3 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg);
+  width: 25.29px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+  position: absolute;
+  top: 57px;
+  left: -100%;
+  transition: all 0.5s ease-in-out;
+  height: 480px;
+  max-width: 320px;
+  visibility: hidden;
+}
+.menu__nav {
+  display: flex;
+  margin: 45px 0 30px 0px;
+}
+.menu__ul {
+  margin-right: 57px;
+}
+.menu__li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+}
+.header__menu-active {
+  visibility: visible;
+  max-width: 320px;
+  z-index: 100;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+  height: 480px;
+  width: 100%;
+  left: 0px;
+  background-color: #fff;
+}
+.search {
+  position: relative;
+}
+.search button {
+  padding: 8px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 3px;
+  bottom: 0px;
+}
+
+.search-form__input {
+  width: 290px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  background: #F2F2F2;
+}
+.search-form__input[placeholder] {
+  padding-left: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #686868;
+}
+.search-form__input::-moz-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #BDBDBD;
+}
+.search-form__input:-ms-input-placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #BDBDBD;
+}
+.search-form__input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #BDBDBD;
+}
+
+.links {
+  align-self: flex-start;
+  margin: 20px 0 20px 20px;
+}
+.links__li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.links__link {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.social {
+  align-self: flex-start;
+  margin: 20px 0 22px 10px;
+}
+.main {
+  max-width: 1920px;
+  min-width: 320px;
+  width: 100%;
+}
+.main__load-button {
+  margin-bottom: 100px;
+}
+
+.page {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-bg__background {
+  margin-bottom: 70px;
+}
+
+.main-news {
+  display: flex;
+  justify-content: center;
+}
+.content-header {
+  max-width: 300px;
+  color: #ffffff;
+  position: absolute;
+  top: 160px;
+  margin-left: 20px;
+}
+.content-header__tag-block {
+  display: flex;
+  max-width: 120px;
+  justify-content: space-between;
+}
+.content-header__tags_world {
+  background: #26A69A;
+}
+.content-header__tags_network {
+  background: #AB47BC;
+}
+.content-header__tags_art {
+  background: #5C6BC0;
+}
+.content-header__tags_science {
+  background: #29B6F6;
+}
+.content-header__tags_auto {
+  background: #26C6DA;
+}
+.content-header__tags_russia {
+  background: #EF5350;
+}
+.content-header__tags_it {
+  background: #FFCA28;
+}
+.tag {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.tag__link {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-info__header {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.publication-time {
+  display: flex;
+}
+.publication-time__icon {
+  margin-right: 10px;
+}
+.publication-time__time-tracker {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.news-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news-header__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  margin: 0 10px 23px 10px;
+}
+
+.news-cards {
+  max-width: 320px;
+}
+
+.good-news {
+  min-width: 320px;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 10px;
+  position: relative;
+}
+.good-news:not(:last-child) {
+  margin-bottom: 52px;
+}
+.good-news:last-child {
+  margin-bottom: 70px;
+}
+.good-news__good-img-container {
+  margin-bottom: 10px;
+}
+.good-news__good-news-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.good-news__good-news-tag__link {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.good-news__description-news {
+  width: 320px;
+}
+
+.good-img-container {
+  transition: all 0.3s ease;
+}
+.good-img-container:hover {
+  filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
+  transition: all 0.3s ease;
+  transform: scale(1.03);
+}
+.good-img-container__link__image {
+  margin-bottom: 10px;
+}
+
+.good-public-time {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.good-public-time__image {
+  margin-right: 10px;
+}
+.good-public-time__time {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.description-news__link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.description-news__text {
+  cursor: pointer;
+}
+.description-news__text:hover {
+  color: #FB8C00;
+}
+
+.carousel-block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+.carousel__wheel {
+  display: flex;
+}
+.carousel-header {
+  position: absolute;
+  top: 50px;
+  left: 23px;
+}
+.carousel-header__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.background {
+  background: #FFA726;
+  max-width: 320px;
+  height: 450px;
+}
+.wheel {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 50px;
+}
+.card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  margin-right: 15px;
+}
+.card:first-child {
+  margin-left: 25px;
+}
+.card__img {
+  width: 240px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-start;
+  bottom: 25px;
+  left: 20px;
+}
+.card-info__tag {
+  margin-bottom: 15px;
+  max-width: 113px;
+}
+.card-info__text {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.load-button {
+  display: flex;
+  justify-content: center;
+}
+.load-button__button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4F4F4F;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: none;
+  width: 300px;
+  height: 60px;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 320px;
+  background: #333333;
+}
+.footer__tags {
+  position: absolute;
+  bottom: 0;
+  max-width: 135px;
+  height: 30px;
+}
+.footer__tags_it {
+  background: #FFCA28;
+}
+.footer__tags_auto {
+  background: #26C6DA;
+}
+.footer__tags_art {
+  background: #5C6BC0;
+}
+.footer__tags_science {
+  background: #29B6F6;
+}
+.footer__tags_russia {
+  background: #EF5350;
+}
+.footer__tags_sport {
+  background: #9CCC65;
+}
+.footer__tags_network {
+  background: #AB47BC;
+}
+.footer__tags_world {
+  background: #26A69A;
+}
+.footer__logo {
+  margin: 50px 0;
+}
+.footer__info-section {
+  padding-bottom: 30px;
+}
+
+.footer-tag {
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-tag__link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.categories-header__text {
+  padding: 50px 0 23px 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.categories-block {
+  display: grid;
+  justify-items: center;
+  row-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-template-columns: repeat(2, 4fr);
+}
+.category {
+  position: relative;
+}
+.category__img {
+  border-radius: 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.social-section__social {
+  margin-bottom: 50px;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-around;
+}
+.fb {
+  width: 40px;
+  height: 40px;
+  background: #3B5998;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.vk {
+  width: 40px;
+  height: 40px;
+  background: #4C6C91;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.gplus {
+  width: 40px;
+  height: 40px;
+  background: #DC4E41;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.ok {
+  width: 40px;
+  height: 40px;
+  background: #F68634;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  background: #55ACEE;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.telegram {
+  width: 40px;
+  height: 40px;
+  background: #0088CC;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.rights__text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+  text-align: center;
+}
+.rights__link {
+  color: #BDBDBD;
+}/*# sourceMappingURL=index.css.map */

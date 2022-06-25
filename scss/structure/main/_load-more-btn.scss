@@ -1,0 +1,13 @@
+.load-button {
+    display: flex;
+    justify-content: center;
+    &__button {
+       @include Rubik (700, 14px, 17px, $darkGray);
+       text-transform: uppercase;
+       letter-spacing: 0.04em;
+       border: none;
+       width: 300px;
+       height: 60px;
+       border-radius: 5px;
+    }
+}

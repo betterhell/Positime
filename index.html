@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/index.css" />
+    <link rel="stylesheet" href="./scss/index.css.map" />
+    <title>Positime</title>
+  </head>
+  <body class="body">
+    <div class="page body__page">
+      <header class="header body__header">
+        <!-- Блок логотипа -->
+        <div class="top header__top">
+          <div class="logo header__logo">
+            <img class="logo-img" src="/images/logo//logo.svg" alt="" />
+          </div>
+
+          <!-- Блок бургер кнопки -->
+          <div class="burger header__burger">
+            <div class="burger__item burger__item-elem1"></div>
+            <div class="burger__item burger__item-elem2"></div>
+            <div class="burger__item burger__item-elem3"></div>
+          </div>
+        </div>
+
+        <!-- Блок навигации мобильного меню -->
+        <div class="menu header__menu">
+          <nav class="menu__nav">
+            <ul class="menu__ul">
+              <li class="menu__li"><a class="menu__link" href="##">IT</a></li>
+              <li class="menu__li">
+                <a class="menu__link" href="##">Авто</a>
+              </li>
+              <li class="menu__li">
+                <a class="menu__link" href="##">Искусство</a>
+              </li>
+              <li class="menu__li">
+                <a class="menu__link" href="##">Мир</a>
+              </li>
+            </ul>
+            <ul class="menu__ul">
+              <li class="menu__li">
+                <a class="menu__link" href="##">Наука</a>
+              </li>
+              <li class="menu__li">
+                <a class="menu__link" href="##">Россия</a>
+              </li>
+              <li class="menu__li"><a class="menu__link" href="##">Сеть</a></li>
+              <li class="menu__li">
+                <a class="menu__link" href="##">Спорт</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="search menu__search">
+            <div class="form-block menu__form-block">
+              <form class="search-form form-block__search-block" action="post">
+                <label for="search-form__input"></label>
+                <input
+                  id="search-form__input"
+                  class="search-form__input"
+                  placeholder="Что вы ищете?"
+                  type="text"
+                />
+              </form>
+            </div>
+
+            <button сlass="button-form search__button">
+              <img
+                class="button-form__button-img"
+                src="../images/icons/icon-search.svg"
+                alt="Поиск"
+              />
+            </button>
+          </div>
+
+          <div class="links menu__search-links">
+            <ul class="links__ul">
+              <li class="links__li">
+                <a class="links__link" href="##"
+                  >Подписывайтесь по RSS или E-mail</a
+                >
+              </li>
+              <li class="links__li">
+                <a class="links__link" href="##">Рекламодателю</a>
+              </li>
+              <li class="links__li">
+                <a class="links__link" href="##">Карта сайта</a>
+              </li>
+              <li class="links__li">
+                <a class="links__link" href="##">О проекте</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="social header__social">
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon.svg"
+                alt="Facebook"
+            /></a>
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon-1.svg"
+                alt="Vkontakte"
+            /></a>
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon-2.svg"
+                alt="Odnoklassniki"
+            /></a>
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon-3.svg"
+                alt="Google"
+            /></a>
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon-4.svg"
+                alt="Twitter"
+            /></a>
+            <a class="social__links" href="##"
+              ><img
+                class="social__img"
+                src="../images/social/social-iсon-5.svg"
+                alt="Telegram"
+            /></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Фон -->
+      <div class="header-bg">
+        <img
+          class="header-bg__background"
+          src="../images/backgrounds/img-bg.jpg"
+          alt="Фон"
+        />
+      </div>
+
+      <main class="main page__main">
+        <!-- Главная новость -->
+        <section class="main-news main__main-news">
+          <div class="content-header main-news__content-header">
+            <div class="content-header__tag-block">
+              <div class="tag content-header__tags content-header__tags_world">
+                <a class="tag__link" href="##">Мир</a>
+              </div>
+              <div
+                class="tag content-header__tags content-header__tags_network"
+              >
+                <a class="tag__link" href="##">Сеть</a>
+              </div>
+            </div>
+
+            <div class="main-info content-header__main-news">
+              <h1 class="main-info__header">
+                Топ-10 лучших городов мира нынешнего тысячелетия
+              </h1>
+            </div>
+
+            <div class="publication-time main-news__publication-time">
+              <img
+                class="publication-time__icon"
+                src="../images/icons/clock-icon.svg"
+                alt="Часы"
+              />
+              <p class="publication-time__time-tracker">
+                10 апреля 2018 в 20:11
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Новостной блок -->
+        <section class="news-block main__news-block">
+          <div class="news-container news-block__container">
+            <div class="news-header news-block__header">
+              <h2 class="news-header__text">
+                Только хорошие <br />
+                и позитивные новости:
+              </h2>
+            </div>
+            <div class="news-cards news-container__content"></div>
+          </div>
+        </section>
+
+        <!-- Карусель -->
+        <section class="carousel-block main_carousel">
+          <div class="carousel carousel-block__carousel">
+            <div class="background carousel__background">
+              <img
+                class="background__image"
+                src="../images/backgrounds/pttrn (2).png"
+                alt="background"
+              />
+            </div>
+
+            <div class="carousel-header carousel__carousel-header">
+              <h3 class="carousel-header__text">Популярные материалы</h3>
+            </div>
+
+            <div class="wheel carousel__wheel">
+              <div class="card wheel__card">
+                <div class="card__img-block">
+                  <img
+                    class="card__img"
+                    src="../images/carousel/carousel(1).png"
+                    alt="Фото"
+                  />
+                </div>
+
+                <div class="card-info">
+                  <div class="tag card-info__tag content-header__tags_art">
+                    <a class="tag__link" href="##">Искусство</a>
+                  </div>
+
+                  <div class="card-info__description">
+                    <h3 class="card-info__text">
+                      Джордж Клуни оказался самым благодарным другом
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card carousel__card">
+                <div class="card__img-block">
+                  <img
+                    class="card__img"
+                    src="../images/carousel/carousel(2).png"
+                    alt="Фото"
+                  />
+                </div>
+
+                <div class="card-info">
+                  <div class="tag card-info__tag content-header__tags_science">
+                    <a class="tag__link" href="##">Наука</a>
+                  </div>
+
+                  <div class="card-info__description">
+                    <h3 class="card-info__text">
+                      Ученые из России впервые стали номинантами на Нобелевскую
+                      премию
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card carousel__card">
+                <div class="card__img-block">
+                  <img
+                    class="card__img"
+                    src="../images/carousel/carousel(3).png"
+                    alt="Фото"
+                  />
+                </div>
+
+                <div class="card-info">
+                  <div class="tag card-info__tag content-header__tags_auto">
+                    <a class="tag__link" href="##">Авто</a>
+                  </div>
+
+                  <div class="card-info__description">
+                    <h3 class="card-info__text">
+                      Uber поможет создать летающие такси
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news-block main__news-block">
+          <div class="news-cards news-container__content"></div>
+        </section>
+
+        <section class="load-section">
+          <div class="load-button main__load-button">
+            <button class="load-button__button">Загрузить еще</button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer page__footer">
+        <div class="footer-container">
+          <!-- Категории -->
+          <section class="category-section footer__category-section">
+            <div class="categories-header footer__categories-header">
+              <h2 class="categories-header__text">Категории</h2>
+            </div>
+
+            <div class="categories-block footer__categories-block">
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##">
+                    <img
+                      class="category__img"
+                      src="../images/categories/img-bg.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_it">
+                  <a class="footer-tag__link" href="##">IT</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##"
+                    ><img
+                      class="category__img"
+                      src="../images/categories/img-bg-1.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_auto">
+                  <a class="footer-tag__link" href="##">Авто</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##"
+                    ><img
+                      class="category__img"
+                      src="../images/categories/img-bg-2.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_art">
+                  <a class="footer-tag__link" href="##">Искусство</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##"
+                    ><img
+                      class="category__img"
+                      src="../images/categories/img-bg-3.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_science">
+                  <a class="footer-tag__link" href="##">Наука</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##">
+                    <img
+                      class="category__img"
+                      src="../images/categories/img-bg-4.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_russia">
+                  <a class="footer-tag__link" href="##">Россия</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##">
+                    <img
+                      class="category__img"
+                      src="../images/categories/img-bg-5.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_sport">
+                  <a class="footer-tag__link" href="##">Спорт</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##">
+                    <img
+                      class="category__img"
+                      src="../images/categories/img-bg-6.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_network">
+                  <a class="footer-tag__link" href="##">Сеть</a>
+                </div>
+              </div>
+
+              <div class="category categories-block__category">
+                <div class="category__category-img">
+                  <a class="category__link" href="##"
+                    ><img
+                      class="category__img"
+                      src="../images/categories/img-bg-7.png"
+                      alt=""
+                  /></a>
+                </div>
+
+                <div class="footer-tag footer__tags footer__tags_world">
+                  <a class="footer-tag__link" href="##">Мир</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Лого футера -->
+          <section class="logo-section footer__logo-section">
+            <div class="logo footer__logo">
+              <a class="logo-img" href="##"
+                ><img src="../images/logo//logo_footer.svg" alt="Логотип"
+              /></a>
+            </div>
+          </section>
+
+          <!-- Соц.сети -->
+          <section class="social-section footer__social-section">
+            <div class="social-footer social-section__social">
+              <a class="fb social-footer__link" href="##"
+                ><img src="../images/social/icon-fb.svg" alt=""
+              /></a>
+              <a class="vk social-footer__link" href="##"
+                ><img src="../images/social/icon-vk.svg" alt=""
+              /></a>
+              <a class="gplus social-footer__link" href="##"
+                ><img src="../images/social/icon-g+.svg" alt=""
+              /></a>
+              <a class="ok social-footer__link" href="##"
+                ><img src="../images/social/icon-ok.svg" alt=""
+              /></a>
+              <a class="twitter social-footer__link" href="##"
+                ><img src="../images/social/icon-twitter.svg" alt=""
+              /></a>
+              <a class="telegram social-footer__link" href="##"
+                ><img src="../images/social/icon-telegram.svg" alt=""
+              /></a>
+            </div>
+          </section>
+
+          <!-- Футер инфо -->
+          <section class="info-section footer__info-section">
+            <div class="rights info-section__rights">
+              <p class="rights__text">
+                © 2010 – 2018; Позитайм.ru <br />
+                <span class="rights__span"
+                  ><a class="rights__link" href="##"
+                    >Пользовательское соглашение</a
+                  ></span
+                >
+                <br />
+                18+. Сайт может содержать контент, не предназначенный для лиц
+                младше 18-ти лет. Использование материалов с сайта разрешается
+                только при наличии гиперссылки на сайт «Позитайм.ru».
+              </p>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/cards.js"></script>
+    <script src="scripts/mobileMenu.js"></script>
+  </body>
+</html>

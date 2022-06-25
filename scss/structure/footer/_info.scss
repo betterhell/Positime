@@ -1,0 +1,13 @@
+.rights {
+    &__text {
+        @include Source (400, 12px, 15px, $standartGray);
+        text-align: center;
+    }
+
+    &__span {
+    }
+
+    &__link {
+        color: $standartGray;
+    }
+}
