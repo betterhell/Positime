@@ -842,8 +842,7 @@ template {
 
 .news-block {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 .news-header__text {
   font-family: "Rubik", sans-serif;
@@ -862,7 +861,6 @@ template {
   min-width: 320px;
   max-width: 1920px;
   width: 100%;
-  margin: 0 10px;
   position: relative;
 }
 .good-news:not(:last-child) {
@@ -877,7 +875,7 @@ template {
 .good-news__good-news-tag {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 20px;
 }
 .good-news__good-news-tag__link {
   text-decoration: none;
@@ -887,11 +885,17 @@ template {
   line-height: 17px;
   color: #ffffff;
 }
+.good-news__good-public-time {
+  margin-left: 10px;
+}
 .good-news__description-news {
+  margin-left: 10px;
   width: 320px;
 }
 
 .good-img-container {
+  display: flex;
+  justify-content: center;
   transition: all 0.3s ease;
 }
 .good-img-container:hover {
