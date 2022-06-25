@@ -85,7 +85,7 @@ const cardsLoad = () => {
       <div class="good-public-time good-news__good-public-time">
         <img
           class="good-public-time__image"
-          src="../images/icons/clock-icon_gray.svg"
+          src="./images/icons/clock-icon_gray.svg"
           alt="Часы"
         />
         <p class="good-public-time__time">${card.time}</p>
