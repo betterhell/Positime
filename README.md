@@ -1,3 +1,3 @@
 # Positime--news-
 
-Trainy project a news city.
+Trainy project a news site.
