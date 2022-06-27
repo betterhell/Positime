@@ -55,14 +55,6 @@ const cards = [
     time: "7 апреля 2018 в 08:10",
     header: "Наконец-то создано мыло, которое не падает из рук",
   },
-  {
-    img: "images/cards/good_news(9).png",
-    tagClass: "content-header__tags_world",
-    tagName: "Мир",
-    time: "6 апреля 2018 в 18:10",
-    header:
-      "Маленькая спасенная горилла помогла фотографу завоевать важную премию",
-  },
 ];
 
 const cardsLoad = () => {

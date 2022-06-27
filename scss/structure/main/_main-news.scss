@@ -19,22 +19,24 @@
 }
 
 .page {
-    min-width: 320px;
     max-width: 1920px;
-    width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 
     &__main {
     }
 }
 
 .header-bg {
-
+    margin-bottom: 70px;
     &__background {
-        margin-bottom: 70px;
+        object-fit: cover;
+        min-width: 320px;
+        max-width: 100%;
+        min-height: 400px;
     }
 }
 

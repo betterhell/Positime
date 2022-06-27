@@ -1,8 +1,9 @@
 .header {
+    min-width: 320px;
+    max-width: 100%;
     position: relative;
      &__top {
          margin: 5px 20px;
-         min-width: 280px;
          display: flex;
          justify-content: space-between;
          align-items: center;
@@ -30,3 +31,44 @@
      &__social {
      }
  }
+
+// ============================
+// 768px 
+// ============================
+
+@media screen and (max-width: 768px) {
+    .header {
+        min-width: 320px;
+        max-width: 100%;
+        position: relative;
+         &__top {
+             margin: 5px 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             position: relative;
+             height: 60px;
+         }
+     
+         &__logo {
+             
+         }
+     
+         &__burger {
+         }
+     
+         &__burger-active {
+             max-height: 480px;
+             position: relative;
+             padding: 15px 10px 10px 30px;
+         }
+     
+     
+         &__menu {
+         }
+     
+         &__social {
+         }
+     }
+    
+}

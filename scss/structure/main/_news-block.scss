@@ -1,6 +1,9 @@
 .news-block {
+    max-width: 1290px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
+
 
     &__container {
 
@@ -23,22 +26,22 @@
     &__text {
         @include Rubik (700, 24px, 28px, $black);
         margin: 0 10px 23px 10px;
+        text-align: center;
     }
 }
 
 .news-cards {
-    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px ;
+    column-gap: 30px;
 }
 
 .good-news {
-    min-width: 320px;
-    max-width: 1920px;
-    width: 100%;
+    max-width: 300px;
     position: relative;
 
-    &:not(:last-child) {
-        margin-bottom: 52px;
-    }
 
     &:last-child {
         margin-bottom: 70px;
@@ -69,13 +72,12 @@
     }
 }
 .news-container {
-
+    max-width: 1290px;
+    min-width: 320px;
     &__good-news {
     }
 }
 .good-img-container {
-    display: flex;
-    justify-content: center;
     transition: all 0.3s ease;
     &:hover {
         filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
