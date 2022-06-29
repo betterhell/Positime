@@ -3,6 +3,19 @@
 @import "../structure/footer/social";
 @import "../structure/footer/info";
 
+// tablet 768px
+@import "../structure/footer/category-tablet";
+@import "../structure/footer/logo-footer-tablet";
+@import "../structure/footer/social-tablet";
+@import "../structure/footer/info-tablet";
+
+// desktop 1920px
+@import "../structure/footer/category-desktop";
+@import "../structure/footer/logo-footer-desktop";
+@import "../structure/footer/social-desktop";
+@import "../structure/footer/info-desktop";
+
+
 // .footer { 
 //     background: $black;
 

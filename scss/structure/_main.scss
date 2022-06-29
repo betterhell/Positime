@@ -3,6 +3,17 @@
 @import "../structure/main/carousel";
 @import "../structure/main/load-more-btn";
 
+// tablet 768px
+@import "../structure/main/main-news-tablet";
+@import "../structure/main/news-block-tablet";
+@import "../structure/main/carousel-tablet";
+@import "../structure/main/load-more-btn-tablet";
+
+// desktop 1920px
+@import "../structure/main/main-news-desktop";
+@import "../structure/main/news-block-desktop";
+@import "../structure/main/carousel-desktop";
+@import "../structure/main/load-more-btn-desktop";
 
 // .main {
 

@@ -1,0 +1,155 @@
+@media screen and (min-width: 768px) {
+    .carousel-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 70px;
+    
+        &__carousel {
+        }
+    }
+    .main {
+    
+        &_carousel {
+        }
+    }
+    
+    .carousel {
+        overflow: hidden;
+        position: relative;
+    
+        &__background {
+        }
+    
+        &__wheel {
+            display: flex;
+        }
+    
+        &__card {
+    
+        }
+    }
+    
+    .carousel-header {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 50px;
+        margin-bottom: 37px;
+    
+        &__text {
+            @include Rubik (700, 30px, 37px, $black)
+        }
+    }
+    
+    .background {
+        background: $orange;
+        height: 450px;
+        &__image {
+            height: 560px;
+            object-fit: fill;
+        }
+    }
+
+    .wheel {
+        display: flex;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        bottom: 50px;
+
+        &:first-child {
+            margin-left: 25px;
+        }
+
+        &:last-child {
+            margin-right: 25px;
+        }
+    
+        &__card {
+        }
+    
+        &__tags {
+        }
+    }
+    
+    .card {
+        max-width: 410px;
+        position: relative;
+        min-width: 240px;
+        height: 300px;
+        transition: all 0.2s ease-in-out;
+
+    
+        &__img-block {
+        }
+    
+        &__img {
+            min-width: 240px;
+            max-width: 410px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    
+        &__info {
+    
+        
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .tag {
+    
+        &__link {
+        }
+    }
+    
+    .card-info {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-start;
+        bottom: 25px;
+        left: 20px;
+        margin-right: 20px;
+    
+        &__tag {
+            margin-bottom: 15px;
+            max-width: 113px;
+        }
+    
+        &__description {
+    
+        }
+    
+        &__text {
+           @include Rubik (700, 18px, 21px, $white);
+        }
+    }
+    
+    .content-header {
+    
+        &__tags {
+    
+            &_art {
+            }
+    
+            &_science {
+            }
+    
+            &_auto {
+            }
+        }
+    }
+    .card-info {
+    
+        &__text {
+        }
+    }
+    
+}

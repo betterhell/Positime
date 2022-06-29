@@ -1,0 +1,130 @@
+@media screen and (min-width: 768px) {
+    .news-block {
+        max-width: 1290px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    
+    
+        &__container {
+    
+        }
+    
+        &__header {
+        }
+    
+        
+    }
+    .news-container {
+    
+    
+        &__content {
+    
+        }
+    }
+    
+    .news-header {
+        &__text {
+            @include Rubik (700, 31px, 35px, $black);
+            margin: 0 10px 23px 10px;
+            text-align: center;
+        }
+    }
+    
+    .news-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 50px ;
+        column-gap: 30px;
+    }
+    
+    .good-news {
+        max-width: 300px;
+        position: relative;
+    
+    
+        &:last-child {
+            margin-bottom: 70px;
+        }
+    
+        &__good-img-container {
+            margin-bottom: 10px;
+        }
+    
+        &__good-news-tag {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+    
+            &__link {
+                text-decoration: none;
+                @include Rubik (700, 14px, 17px, $white);
+            }
+        }
+    
+        &__good-public-time {
+            margin-left: 10px;
+        }
+    
+        &__description-news {
+            margin-left: 10px;
+            width: 320px;
+        }
+    }
+    .news-container {
+        max-width: 1290px;
+        min-width: 320px;
+        &__good-news {
+        }
+    }
+    .good-img-container {
+        transition: all 0.3s ease;
+        &:hover {
+            filter: drop-shadow(0px 15px 30px rgba(0, 0, 0, 0.15));
+            transition: all 0.3s ease;
+            transform: scale(1.03)
+        }
+    
+        &__link {
+           
+            &__image {
+                margin-bottom: 10px;
+    
+            }
+    
+        }
+    
+    
+    }
+    
+    .good-public-time {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+    
+        &__image {
+            margin-right: 10px;
+        }
+    
+        &__time {
+            @include Source (400, 14px, 18px, #BDBDBD);
+        }
+    }
+    
+    .description-news {
+        
+        &__link {
+            @include Rubik (700, 18px, 21px, $black);
+        }
+    
+        &__text {
+            cursor: pointer;
+            &:hover {
+                color: #FB8C00
+            }
+        }
+    }
+    
+    
+}

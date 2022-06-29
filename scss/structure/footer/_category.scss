@@ -7,6 +7,8 @@
     }
 
     &__categories-header {
+        display: flex;
+        justify-content: center;
     }
 
     &__categories-block {
@@ -63,7 +65,7 @@
     }
 
     &__info-section {
-        padding-bottom: 30px;
+        
     }
 }
 
@@ -99,7 +101,7 @@
 }
 
 .categories-header {
-    margin: 70px 0 37px 10px;
+    margin: 70px 0 37px 0px;
     &__text {
         @include Rubik (700, 22px, 26px, $white);
     }
@@ -125,137 +127,4 @@
     &__img {
         border-radius: 5px;
     }
-}
-
-// ============================
-// 768px 
-// ============================
-
-@media screen and (min-width: 768px) {
-    .footer { 
-        width: 100%;
-        background: $black;
-    
-        &__category-section {
-    
-        }
-    
-        &__categories-header {
-        }
-    
-        &__categories-block {
-        }
-    
-        &__tags {
-            position: absolute;
-            bottom: 0;
-            max-width: 135px;
-            height: 30px;
-            
-            &_it {
-                background: $it;
-            }
-    
-            &_auto {
-                background: $auto;
-            }
-    
-            &_art {
-                background: $art;
-            }
-    
-            &_science {
-                background: $science;
-            }
-    
-            &_russia {
-                background: $russia;
-            }
-    
-            &_sport {
-                background: $sport;
-            }
-    
-            &_network {
-                background: $network;
-            }
-    
-            &_world {
-                background: $world;
-            }
-        }
-    
-        &__logo-section {
-           
-        }
-    
-        &__logo {
-            margin: 50px 0;
-        }
-    
-        &__social-section {
-        }
-    
-        &__info-section {
-            padding-bottom: 30px;
-        }
-    }
-    
-    .footer-container {
-    }
-    
-    .page {
-        
-        &__footer {
-    
-        }
-    }
-    
-    .category-section {
-    }
-    
-    .footer-tag {
-        width: 100%;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        &__link {
-          @include Rubik (700, 14px, 17px, $white);
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          text-decoration: none;
-        }
-    }
-    
-    .categories-header {
-        &__text {
-            @include Rubik (700, 36px, 43px, $white)
-        }
-    }
-    
-    .categories-block {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap;
-    
-        &__category {
-        }
-    }
-    .category {
-        position: relative;
-        &__category-img {
-        }
-    
-        &__link {
-        }
-    
-        &__img {
-            border-radius: 5px;
-        }
-    }
-    
 }

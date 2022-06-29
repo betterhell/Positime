@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+    .social-section {
+        order: 3;
+        &__social {
+            margin: 0;
+        }
+    
+    }
+    
+    .social-footer {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    
+        &__link {
+    
+        }
+    
+    }
+    
+    .fb {
+        @include Social (30px, 30px, $fb)
+    }
+    
+    .vk {
+        @include Social (30px, 30px, $vk)
+    
+    }
+    .gplus {
+        @include Social (30px, 30px, $gplus)
+    }
+    .ok {
+        @include Social (30px, 30px, $ok)
+    }
+    .twitter {
+        @include Social (30px, 30px, $twitter)
+    }
+    .telegram {
+        @include Social (30px, 30px, $telegram)
+    }
+    .info-section {
+        padding-bottom: 0;
+        &__rights {
+        }
+    }
+    
+    
+}

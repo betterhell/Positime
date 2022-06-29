@@ -1,0 +1,26 @@
+@media screen and (min-width: 768px) {
+    .bottom-footer {
+       margin: 70px 15px 10px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       gap: 20px;
+    }
+    
+    .rights {
+        order: 2;
+        max-width: 700px;
+        &__text {
+            text-align: start;
+            @include Source (400, 12px, 15px, $standartGray);
+            
+        }
+    
+        &__span {
+        }
+    
+        &__link {
+            color: $standartGray;
+        }
+    }
+}

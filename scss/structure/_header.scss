@@ -2,6 +2,16 @@
 @import "../structure/header/burger-button";
 @import "../structure/header/burger-menu";
 
+// tablet 768px
+@import "../structure/header/logo-tablet";
+@import "../structure/header/burger-button-tablet";
+@import "../structure/header/burger-menu-tablet";
+
+// desktop 1920px
+@import "../structure/header/logo-desktop";
+@import "../structure/header/burger-button-desktop";
+@import "../structure/header/burger-menu-desktop";
+
 // .header {
 //    position: relative;
 //     &__top {
