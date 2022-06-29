@@ -580,12 +580,10 @@ template {
 }
 @media screen and (min-width: 320px) {
   .header {
-    min-width: 320px;
     max-width: 1920px;
     position: relative;
   }
   .header__top {
-    min-width: 320px;
     margin: 5px 20px;
     display: flex;
     justify-content: space-between;
