@@ -1134,6 +1134,36 @@ template {
   .menu-top__link:hover {
     color: #ffffff;
   }
+
+  .search-button button {
+    cursor: pointer;
+    padding: 15px 15px;
+    border: none;
+    background: transparent;
+  }
+
+  .upper-top {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .top-links__ul {
+    display: flex;
+    gap: 30px;
+  }
+  .top-links__link {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #BDBDBD;
+    text-decoration: none;
+  }
+  .top-links__link:hover {
+    color: #FFA726;
+  }
 }
 @media screen and (min-width: 780px) {
   .menu {
