@@ -1,0 +1,75 @@
+@media screen and (min-width: 768px) {
+    .header {
+        min-width: 320px;
+        max-width: 1920px;
+        position: relative;
+         &__top {
+             margin: 5px 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             position: relative;
+             height: 60px;
+         }
+     
+         &__logo {
+             
+         }
+
+         &__menu-top {
+            display: block;
+         }
+     
+         &__burger {
+            display: none;
+         }
+
+         &__search-button {
+            display: block
+         }
+     
+         &__burger-active {
+             max-height: 480px;
+             position: relative;
+             padding: 15px 10px 10px 30px;
+         }
+     
+     
+         &__menu {
+         }
+     
+         &__social {
+         }
+    }
+
+
+    .menu-top {
+        display: block;
+        @include Rubik (700, 14px, 17px, $white);
+    
+        &__ul {
+            display: flex;
+            gap: 10px;
+        }
+    
+        &__li {
+            padding: 15px 0;
+    
+            &:hover {
+                background: $menuHover;
+                border-radius: 5px;
+            }
+        }
+    
+        &__link {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: $black;
+    
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    
+}

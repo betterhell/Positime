@@ -1,37 +1,116 @@
-.header {
-    min-width: 320px;
-    max-width: 100%;
-    position: relative;
-     &__top {
-         margin: 5px 20px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         position: relative;
-         height: 60px;
-     }
- 
-     &__logo {
-         
-     }
+@media screen and (min-width: 320px) {
+    .header {
+        min-width: 320px;
+        max-width: 1920px;
+        position: relative;
+         &__top {
+             min-width: 320px;
+             margin: 5px 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             position: relative;
+             height: 60px;
+         }
+     
+         &__logo {
+             
+         }
+    
+         &__menu-top {
+            display: none;
+         }
+    
+    
+     
+         &__burger {
+         }
+    
+         &__search-button {
+            display: none
+         }
+     
+         &__burger-active {
+             max-height: 480px;
+             position: relative;
+             padding: 15px 10px 10px 30px;
+         }
+     
+     
+         &__menu {
+         }
+     
+         &__social {
+        }
+    }
+    
+    .menu-top {
+        width: 1276px;
 
-     &__menu-top {
         display: none;
-     }
- 
-     &__burger {
-     }
- 
-     &__burger-active {
-         max-height: 480px;
-         position: relative;
-         padding: 15px 10px 10px 30px;
-     }
- 
- 
-     &__menu {
-     }
- 
-     &__social {
+        @include Rubik (700, 14px, 17px, $white);
+    
+        &__ul {
+            display: flex;
+            justify-content: flex-start;
+                gap: 10px;
+        }
+    
+        &__li {
+            padding: 5px 0;
+            &:hover {
+                background: $menuHover;
+                border-radius: 5px;
+            }
+        }
+    
+        &__link {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: $black;
+    
+            &:hover {
+                color: $white;
+            }
+        }
+    
+        .search-button {
+            border: none;
+        }
+    }
+    
+    .upper-top {
+        display: none;
+        &__search-links {
+        }
+    }
+    .header {
+    
+        &__upper-top {
+        }
+    
+        &__top-social {
+        }
+    }
+    .top-links {
+    
+        &__ul {
+        }
+    
+        &__li {
+        }
+    
+        &__link {
+        }
+    }
+    .top-social {
+    
+        &__links {
+        }
+    
+        &__img {
+        }
     }
 }
+
+

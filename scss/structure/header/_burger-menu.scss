@@ -1,155 +1,4 @@
-.menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 100;
-    position: absolute;
-    top: 57px;
-    left: -100%;
-    transition: all 0.5s ease-in-out;
-    height: 480px;
-    max-width: 320px;
-    visibility: hidden;
-
-    &__nav {
-        display: flex;
-        margin: 45px 0 30px 0px;
-    }
-
-    &__ul {
-        margin-right: 57px;
-    }
-
-    &__li:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    &__link {
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        @include Rubik (700, 14px, 17px, #333333)
-    }
-
-    &__search {
-    }
-
-    &__search-links {
-    }
-}
-
-.header__menu-active {
-    visibility:visible;
-    max-width: 320px;
-    z-index: 100;
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    height: 480px;
-    width: 100%;
-    left: 0px;
-    background-color: #fff;
-
-    &__nav {
-    }
-
-    &__ul {
-    }
-
-    &__li:not(:last-child) {
-    }
-
-    &__link {
-    }
-
-    &__search {
-    }
-
-    &__search-links {
-    }
-}
-
-.search {
-    position: relative;
-    button {
-        padding: 8px;
-        border: none; 
-        background: transparent;
-        position: absolute;
-        right: 3px;
-        bottom: 0px;
-    }
-}
-
-.menu {
-
-		&__search {
-		}
-
-		&__form-block {
-		}
-}
-
-.form-block {
-		&__search-block {
-
-		}
-}
-
-.search-form {
-
-		&__input {
-            width: 290px;
-            height: 40px;
-            padding: 0;
-            margin: 0;
-            border: none;
-            border-radius: 5px;
-            background: #F2F2F2;
-		}
-
-        &__input[placeholder] {
-            padding-left: 10px;
-            @include Rubik (700, 18px, 21px, #686868)
-        }
-        &__input::placeholder {
-            @include Rubik (700, 18px, 21px, #BDBDBD)
-        }
-}
-
-.links {
-    align-self: flex-start;
-    margin: 20px 0 20px 20px;
-    &__ul {
-    }
-
-    &__li:not(:last-child) {
-        margin-bottom: 15px
-    }
-
-    &__link {
-        @include Source (400, 12px, 15px, #BDBDBD);
-        text-decoration: none;
-    }
-}
-
-.social {
-    align-self: flex-start;
-    margin: 20px 0 22px 10px;
-    &_links {
-    }
-
-    &__img {
-    }
-
-    &__links {
-    }
-}
-
-// ============================
-// 768px 
-// ============================
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) {
     .menu {
         display: flex;
         flex-direction: column;
@@ -160,7 +9,9 @@
         left: -100%;
         transition: all 0.5s ease-in-out;
         height: 480px;
-        max-width: 320px;
+        min-width: 320px;
+        max-width: 768px;
+        width: 100;
         visibility: hidden;
     
         &__nav {
@@ -197,7 +48,7 @@
         transition: all 0.5s ease-in-out;
         position: absolute;
         height: 480px;
-        width: 100%;
+        min-width: 100%;
         left: 0px;
         background-color: #fff;
     
@@ -233,7 +84,6 @@
     }
     
     .menu {
-    
             &__search {
             }
     
@@ -269,6 +119,7 @@
     }
     
     .links {
+        display: block;
         align-self: flex-start;
         margin: 20px 0 20px 20px;
         &__ul {
@@ -285,6 +136,7 @@
     }
     
     .social {
+        display: block;
         align-self: flex-start;
         margin: 20px 0 22px 10px;
         &_links {
@@ -296,5 +148,6 @@
         &__links {
         }
     }
-    
 }
+
+

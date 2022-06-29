@@ -1,6 +1,7 @@
 @media screen and (min-width: 768px) {
     .header {
-        
+        min-width: 320px;
+        max-width: 1920px;
         position: relative;
          &__top {
              margin: 5px 20px;
@@ -16,10 +17,15 @@
          }
 
          &__menu-top {
-            display: block;
+        
          }
      
          &__burger {
+            display: block;
+         }
+
+         &__search-button {
+            
          }
      
          &__burger-active {
@@ -35,31 +41,232 @@
          &__social {
          }
     }
-}
 
-.menu-top {
-    @include Rubik (700, 14px, 17px, $white);
 
-    &__ul {
-        display: flex;
-    }
-
-    &__li {
-        padding: 15px 0;
-
-        &:hover {
-            background: $menuHover;
-            border-radius: 5px;
+    .menu-top {
+        display: block;
+        @include Rubik (700, 14px, 17px, $white);
+    
+        &__ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+    
+        &__li {
+            padding: 3px 0;
+    
+            &:hover {
+                background: $menuHover;
+                border-radius: 5px;
+            }
+        }
+    
+        &__link {
+            padding: 3px 7px;
+            text-decoration: none;
+            color: $black;
+    
+            &:hover {
+                color: $white;
+            }
         }
     }
 
-    &__link {
-        padding: 15px 25px;
-        text-decoration: none;
-        color: $black;
+    .search-button {
+       button {
+        cursor: pointer;
+        padding: 15px 15px;
+        border: none;
+        background: transparent;
+       }
+    }
 
-        &:hover {
-            color: $white;
+    .upper-top {
+        
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $lightGray;
+        &__search-links {
+        }
+    }
+    .header {
+    
+        &__upper-top {
+        
+        }
+    
+        &__top-social {
+        }
+    }
+    .top-links {
+    
+        &__ul {
+            display: flex;
+            gap: 30px;
+        }
+    
+        &__li {
+
+        }
+    
+        &__link {
+            @include Source (400, 12px, 15px, #BDBDBD);
+            text-decoration: none;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    .top-social {
+    
+        &__links {
+
+        }
+    
+        &__img {
+            
+        }
+    }
+    
+}
+
+@media screen and (min-width: 730px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+         &__top {
+             margin: 5px 20px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             position: relative;
+             height: 60px;
+         }
+     
+         &__logo {
+             
+         }
+
+         &__menu-top {
+            
+         }
+
+         &__top {
+            
+         }
+     
+         &__burger {
+            display: block;
+         }
+
+         &__search-button {
+            
+         }
+     
+         &__burger-active {
+             max-height: 480px;
+             position: relative;
+             padding: 15px 10px 10px 30px;
+         }
+     
+     
+         &__menu {
+         }
+     
+         &__social {
+         }
+    }
+
+    .menu-top {
+        @include Rubik (700, 14px, 17px, $white);
+    
+        &__ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+    
+        &__li {
+            padding: 15px 0;
+    
+            &:hover {
+                background: $menuHover;
+                border-radius: 5px;
+            }
+        }
+    
+        &__link {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: $black;
+    
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .search-button {
+       button {
+        cursor: pointer;
+        padding: 15px 15px;
+        border: none;
+        background: transparent;
+       }
+    }
+
+    .upper-top {
+
+        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $lightGray;
+        &__search-links {
+        }
+    }
+    .header {
+    
+        &__upper-top {
+        
+        }
+    
+        &__top-social {
+        }
+    }
+    .top-links {
+    
+        &__ul {
+            display: flex;
+            gap: 30px;
+        }
+    
+        &__li {
+
+        }
+    
+        &__link {
+            @include Source (400, 12px, 15px, #BDBDBD);
+            text-decoration: none;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+    .top-social {
+    
+        &__links {
+
+        }
+    
+        &__img {
+            
         }
     }
 }
