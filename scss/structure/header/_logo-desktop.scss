@@ -73,11 +73,17 @@
         }
     
         .search-button {
+            border-radius: 5px;
             button {
              cursor: pointer;
              padding: 15px 15px;
              border: none;
              background: transparent;
+
+            }
+
+            &:active {
+                background-color: #FFA726;
             }
          }
      
@@ -111,7 +117,7 @@
              }
          
              &__link {
-                 @include Source (400, 12px, 15px, #BDBDBD);
+                 @include Source (400, 14px, 18px, #BDBDBD);
                  text-decoration: none;
      
                  &:hover {
@@ -121,15 +127,185 @@
          }
          .top-social {
          
-        &__links {
-     
+        &__links:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        &__img {
         }
         
-        &__img {
-          
-        
     }
+
+    .search-input {
+        display: none;
+        position: relative;
+		&__label {
+		}
+
+		&__input {
+            max-width: 1900px;
+            min-width: 320px;
+            width: 100%;
+            padding: 0;
+            height: 120px;
+            border: 0;
+            background: $lightGray;
+
+		}
+
+        &__input[placeholder] {
+            padding-left: 20px;
+            @include Rubik (700, 48px, 57px, #686868)
+        }
+        &__input::placeholder {
+            @include Rubik (700, 48px, 57px, #BDBDBD)
+        }
+    }
+
+    .search-button__search-input_active {
+         display: block;
+    }
+
+
+        .search-button {
+
+        		&__search-input {
+
+        		}
+        }
+
+        .search-close {
+            position: absolute;
+            bottom: 30px;
+            right: 20px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+
+            &__item-first {
+                border-radius: 10px;
+                border: 2px solid $black;
+                width: 30px;
+                position: absolute;
+                transform: translate(-50%, 0%) rotate(-45deg);
+             }
+             &__item-second {
+                border-radius: 10px;
+                position: absolute;
+                width: 30px;
+                border: 2px solid $black;
+                transform: translate(-50%, 0%) rotate(45deg);
+            }
+}   
+        .search-input {
         
-}
+        		&__search-close {
+        		}
+        }
+        .close-button {
+
+        }
     
-}
+
+        .header-bg {
+            position: relative;
+            margin-bottom: 70px;
+            &__background {
+                object-fit: cover;
+                min-width: 320px;
+                max-width: 100%;
+                min-height: 400px;
+            }
+        }
+        
+        
+        .main-news {
+            display: flex;
+            justify-content: center;
+            
+            &__content-header {
+            }
+        
+            &__publication-time {
+            }
+        }
+        
+        .content-header {
+            color: $white;
+            bottom: 120px;
+            margin-left: 20px;
+            max-width: 770px;
+            height: fit-content;
+        
+            &__tag-block {
+                display: flex;
+                
+            }
+        
+            &__tags {
+                margin-right: 20px;
+    
+                &_world {
+                    background: $world
+                }
+        
+                &_network {
+                    background: $network
+                }
+        
+                &_art {
+                    background: $art
+                }
+        
+                &_science {
+                    background: $science
+                }
+        
+                &_auto {
+                    background: $auto
+                }
+        
+                &_russia {
+                    background: $russia;
+                }
+        
+                &_it {
+                    background: $it;
+                }
+            }
+        
+            &__main-news {
+            }
+        }
+        
+        
+        .tag {
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            padding: 5px 8px;
+            border-radius: 5px;
+            &__link {
+                text-decoration: none;
+                @include Rubik (700, 14px, 17px, $white);
+            }
+        }
+        .main-info {
+            &__header {
+                margin: 25px 0 10px 0;
+                @include Rubik (700, 48px, 57px, $white);
+            }
+        }
+        .publication-time {
+            display: flex;
+        
+            &__icon {
+                margin-right: 10px;
+            }
+        
+            &__time-tracker {
+                @include Source (400, 14px, 18px, $white);
+            }
+        }
+        
+}        

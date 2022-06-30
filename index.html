@@ -12,6 +12,7 @@
     <div class="page body__page">
       <header class="header body__header">
         <!-- Блок логотипа -->
+
         <div class="upper-top header__upper-top">
           <div class="top-links upper-top__search-links">
             <ul class="top-links__ul">
@@ -128,129 +129,148 @@
           </div>
         </div>
 
-        <!-- Блок навигации мобильного меню -->
-        <div class="menu header__menu">
-          <nav class="menu__nav">
-            <ul class="menu__ul">
-              <li class="menu__li"><a class="menu__link" href="##">IT</a></li>
-              <li class="menu__li">
-                <a class="menu__link" href="##">Авто</a>
-              </li>
-              <li class="menu__li">
-                <a class="menu__link" href="##">Искусство</a>
-              </li>
-              <li class="menu__li">
-                <a class="menu__link" href="##">Мир</a>
-              </li>
-            </ul>
-            <ul class="menu__ul">
-              <li class="menu__li">
-                <a class="menu__link" href="##">Наука</a>
-              </li>
-              <li class="menu__li">
-                <a class="menu__link" href="##">Россия</a>
-              </li>
-              <li class="menu__li"><a class="menu__link" href="##">Сеть</a></li>
-              <li class="menu__li">
-                <a class="menu__link" href="##">Спорт</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="search-input search-button__search-input">
+          <form action="get">
+            <label class="search-input__label" for=""></label>
+            <input
+              placeholder="Что вы ищете?"
+              class="search-input__input"
+              type="text"
+            />
+          </form>
 
-          <div class="search menu__search">
-            <div class="form-block menu__form-block">
-              <form class="search-form form-block__search-block" action="post">
-                <label for="search-form__input"></label>
-                <input
-                  id="search-form__input"
-                  class="search-form__input"
-                  placeholder="Что вы ищете?"
-                  type="text"
-                />
-              </form>
-            </div>
-
-            <button сlass="button-form search__button">
-              <img
-                class="button-form__button-img"
-                src="./images/icons/icon-search.svg"
-                alt="Поиск"
-              />
-            </button>
-          </div>
-
-          <div class="links menu__search-links">
-            <ul class="links__ul">
-              <li class="links__li">
-                <a class="links__link" href="##"
-                  >Подписывайтесь по RSS или E-mail</a
-                >
-              </li>
-              <li class="links__li">
-                <a class="links__link" href="##">Рекламодателю</a>
-              </li>
-              <li class="links__li">
-                <a class="links__link" href="##">Карта сайта</a>
-              </li>
-              <li class="links__li">
-                <a class="links__link" href="##">О проекте</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="social header__social">
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon.svg"
-                alt="Facebook"
-            /></a>
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon-1.svg"
-                alt="Vkontakte"
-            /></a>
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon-2.svg"
-                alt="Odnoklassniki"
-            /></a>
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon-3.svg"
-                alt="Google"
-            /></a>
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon-4.svg"
-                alt="Twitter"
-            /></a>
-            <a class="social__links" href="##"
-              ><img
-                class="social__img"
-                src="./images/social/social-iсon-5.svg"
-                alt="Telegram"
-            /></a>
+          <div class="search-close search-input__search-close">
+            <span class="search-close__item-first"></span>
+            <span class="search-close__item-second"></span>
           </div>
         </div>
-      </header>
 
-      <!-- Фон -->
-      <div class="header-bg">
-        <img
-          class="header-bg__background"
-          src="./images/backgrounds/img-bg (1).png"
-          alt="Фон"
-        />
-      </div>
+        <!-- Блок навигации мобильного меню -->
+        <div class="menu header__menu">
+          <div class="menu-container menu__menu-container">
+            <nav class="menu__nav">
+              <ul class="menu__ul">
+                <li class="menu__li"><a class="menu__link" href="##">IT</a></li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Авто</a>
+                </li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Искусство</a>
+                </li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Мир</a>
+                </li>
+              </ul>
+              <ul class="menu__ul">
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Наука</a>
+                </li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Россия</a>
+                </li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Сеть</a>
+                </li>
+                <li class="menu__li">
+                  <a class="menu__link" href="##">Спорт</a>
+                </li>
+              </ul>
+            </nav>
 
-      <main class="main page__main">
-        <!-- Главная новость -->
-        <section class="main-news main__main-news">
+            <div class="search menu__search">
+              <div class="form-block menu__form-block">
+                <form
+                  class="search-form form-block__search-block"
+                  action="post"
+                >
+                  <label for="search-form__input"></label>
+                  <input
+                    id="search-form__input"
+                    class="search-form__input"
+                    placeholder="Что вы ищете?"
+                    type="text"
+                  />
+                </form>
+              </div>
+
+              <button сlass="button-form search__button">
+                <img
+                  class="button-form__button-img"
+                  src="./images/icons/icon-search.svg"
+                  alt="Поиск"
+                />
+              </button>
+            </div>
+
+            <div class="links menu__search-links">
+              <ul class="links__ul">
+                <li class="links__li">
+                  <a class="links__link" href="##"
+                    >Подписывайтесь по RSS или E-mail</a
+                  >
+                </li>
+                <li class="links__li">
+                  <a class="links__link" href="##">Рекламодателю</a>
+                </li>
+                <li class="links__li">
+                  <a class="links__link" href="##">Карта сайта</a>
+                </li>
+                <li class="links__li">
+                  <a class="links__link" href="##">О проекте</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="social header__social">
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon.svg"
+                  alt="Facebook"
+              /></a>
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon-1.svg"
+                  alt="Vkontakte"
+              /></a>
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon-2.svg"
+                  alt="Odnoklassniki"
+              /></a>
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon-3.svg"
+                  alt="Google"
+              /></a>
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon-4.svg"
+                  alt="Twitter"
+              /></a>
+              <a class="social__links" href="##"
+                ><img
+                  class="social__img"
+                  src="./images/social/social-iсon-5.svg"
+                  alt="Telegram"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-bg page__header-bg">
+          <img
+            class="header-bg__background"
+            src="./images/backgrounds/img-bg (1).png"
+            alt="Фон"
+          />
+        </div>
+
+        <section class="main-news header__main-news">
           <div class="content-header main-news__content-header">
             <div class="content-header__tag-block">
               <div class="tag content-header__tags content-header__tags_world">
@@ -281,6 +301,12 @@
             </div>
           </div>
         </section>
+      </header>
+
+      <!-- Фон -->
+
+      <main class="main page__main">
+        <!-- Главная новость -->
 
         <!-- Новостной блок -->
         <section class="news-block main__news-block">
@@ -587,5 +613,6 @@
     <script src="scripts/carousel.js"></script>
     <script src="scripts/cards.js"></script>
     <script src="scripts/mobileMenu.js"></script>
+    <script src="/scripts/search.js"></script>
   </body>
 </html>

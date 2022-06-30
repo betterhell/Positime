@@ -7,6 +7,7 @@
     }
 
     &__main-news {
+        
     }
 
     &__news-block {
@@ -24,105 +25,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
 
     &__main {
     }
 }
 
-.header-bg {
-    margin-bottom: 70px;
-    &__background {
-        object-fit: cover;
-        min-width: 320px;
-        max-width: 100%;
-        min-height: 400px;
-    }
-}
-
-
-.main-news {
-    display: flex;
-    justify-content: center;
-    
-    &__content-header {
-    }
-
-    &__publication-time {
-    }
-}
-
-.content-header {
-    color: $white;
-    position: absolute;
-    top: 160px;
-    margin-left: 20px;
-
-    &__tag-block {
-        display: flex;
-        max-width: 120px;
-        justify-content: space-between;
-    }
-
-    &__tags {
-
-        &_world {
-            background: $world
-        }
-
-        &_network {
-            background: $network
-        }
-
-        &_art {
-            background: $art
-        }
-
-        &_science {
-            background: $science
-        }
-
-        &_auto {
-            background: $auto
-        }
-
-        &_russia {
-            background: $russia;
-        }
-
-        &_it {
-            background: $it;
-        }
-    }
-
-    &__main-news {
-    }
-}
-
-
-.tag {
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 5px 8px;
-    border-radius: 5px;
-    &__link {
-        text-decoration: none;
-        @include Rubik (700, 14px, 17px, $white);
-    }
-}
-.main-info {
-    &__header {
-        @include Rubik (700, 30px, 36px, $white);
-    }
-}
-.publication-time {
-    display: flex;
-
-    &__icon {
-        margin-right: 10px;
-    }
-
-    &__time-tracker {
-        @include Source (400, 14px, 18px, $white);
-    }
-}

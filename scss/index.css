@@ -590,6 +590,11 @@ template {
   position: relative;
   height: 60px;
 }
+.header__main-news {
+  position: absolute;
+  bottom: 178px;
+  margin-left: 20px;
+}
 .header__logo {
   margin-right: 30px;
 }
@@ -640,6 +645,97 @@ template {
 .upper-top {
   display: none;
 }
+.header-bg {
+  position: relative;
+  margin-bottom: 70px;
+}
+.header-bg__background {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 320px;
+  max-width: 100%;
+  min-height: 400px;
+}
+
+.search-input {
+  display: none;
+}
+
+.main-news {
+  display: flex;
+  justify-content: center;
+}
+.content-header {
+  color: #ffffff;
+  margin-left: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.content-header__tag-block {
+  display: flex;
+}
+.content-header__tags {
+  margin-right: 20px;
+}
+.content-header__tags_world {
+  background: #26A69A;
+}
+.content-header__tags_network {
+  background: #AB47BC;
+}
+.content-header__tags_art {
+  background: #5C6BC0;
+}
+.content-header__tags_science {
+  background: #29B6F6;
+}
+.content-header__tags_auto {
+  background: #26C6DA;
+}
+.content-header__tags_russia {
+  background: #EF5350;
+}
+.content-header__tags_it {
+  background: #FFCA28;
+}
+.tag {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+.tag__link {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-info__header {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.publication-time {
+  display: flex;
+}
+.publication-time__icon {
+  margin-right: 10px;
+}
+.publication-time__time-tracker {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
 .burger {
   padding: 20px 0px 13px 20px;
   position: relative;
@@ -815,6 +911,11 @@ template {
     position: relative;
     padding: 15px 10px 10px 30px;
   }
+  .header__main-news {
+    position: absolute;
+    bottom: 178px;
+    margin-left: 250px;
+  }
   .menu-top {
     display: none;
     font-family: "Rubik", sans-serif;
@@ -872,6 +973,96 @@ template {
   }
   .top-links__link:hover {
     color: #FFA726;
+  }
+
+  .header-bg {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .header-bg__background {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 320px;
+    max-width: 100%;
+    min-height: 400px;
+  }
+
+  .main-news {
+    display: flex;
+    justify-content: center;
+  }
+  .content-header {
+    color: #ffffff;
+    bottom: 120px;
+    margin-left: 20px;
+    max-width: 770px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .content-header__tag-block {
+    display: flex;
+  }
+  .content-header__tags {
+    margin-right: 20px;
+  }
+  .content-header__tags_world {
+    background: #26A69A;
+  }
+  .content-header__tags_network {
+    background: #AB47BC;
+  }
+  .content-header__tags_art {
+    background: #5C6BC0;
+  }
+  .content-header__tags_science {
+    background: #29B6F6;
+  }
+  .content-header__tags_auto {
+    background: #26C6DA;
+  }
+  .content-header__tags_russia {
+    background: #EF5350;
+  }
+  .content-header__tags_it {
+    background: #FFCA28;
+  }
+  .tag {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  .tag__link {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  .main-info__header {
+    margin: 25px 0 10px 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #ffffff;
+  }
+
+  .publication-time {
+    display: flex;
+  }
+  .publication-time__icon {
+    margin-right: 10px;
+  }
+  .publication-time__time-tracker {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
   }
 }
 @media screen and (min-width: 730px) {
@@ -953,6 +1144,10 @@ template {
   }
   .top-links__link:hover {
     color: #FFA726;
+  }
+
+  .search-input {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1138,11 +1333,17 @@ template {
     color: #ffffff;
   }
 
+  .search-button {
+    border-radius: 5px;
+  }
   .search-button button {
     cursor: pointer;
     padding: 15px 15px;
     border: none;
     background: transparent;
+  }
+  .search-button:active {
+    background-color: #FFA726;
   }
 
   .upper-top {
@@ -1159,13 +1360,177 @@ template {
   .top-links__link {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    line-height: 18px;
     color: #BDBDBD;
     text-decoration: none;
   }
   .top-links__link:hover {
     color: #FFA726;
+  }
+
+  .top-social__links:not(:last-child) {
+    margin-right: 15px;
+  }
+  .search-input {
+    display: none;
+    position: relative;
+  }
+  .search-input__input {
+    max-width: 1900px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0;
+    height: 120px;
+    border: 0;
+    background: #F2F2F2;
+  }
+  .search-input__input[placeholder] {
+    padding-left: 20px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #686868;
+  }
+  .search-input__input::-moz-placeholder {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #BDBDBD;
+  }
+  .search-input__input:-ms-input-placeholder {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #BDBDBD;
+  }
+  .search-input__input::placeholder {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #BDBDBD;
+  }
+
+  .search-button__search-input_active {
+    display: block;
+  }
+
+  .search-close {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+  }
+  .search-close__item-first {
+    border-radius: 10px;
+    border: 2px solid #333333;
+    width: 30px;
+    position: absolute;
+    transform: translate(-50%, 0%) rotate(-45deg);
+  }
+  .search-close__item-second {
+    border-radius: 10px;
+    position: absolute;
+    width: 30px;
+    border: 2px solid #333333;
+    transform: translate(-50%, 0%) rotate(45deg);
+  }
+
+  .header-bg {
+    position: relative;
+    margin-bottom: 70px;
+  }
+  .header-bg__background {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 320px;
+    max-width: 100%;
+    min-height: 400px;
+  }
+
+  .main-news {
+    display: flex;
+    justify-content: center;
+  }
+  .content-header {
+    color: #ffffff;
+    bottom: 120px;
+    margin-left: 20px;
+    max-width: 770px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .content-header__tag-block {
+    display: flex;
+  }
+  .content-header__tags {
+    margin-right: 20px;
+  }
+  .content-header__tags_world {
+    background: #26A69A;
+  }
+  .content-header__tags_network {
+    background: #AB47BC;
+  }
+  .content-header__tags_art {
+    background: #5C6BC0;
+  }
+  .content-header__tags_science {
+    background: #29B6F6;
+  }
+  .content-header__tags_auto {
+    background: #26C6DA;
+  }
+  .content-header__tags_russia {
+    background: #EF5350;
+  }
+  .content-header__tags_it {
+    background: #FFCA28;
+  }
+  .tag {
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+  .tag__link {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+
+  .main-info__header {
+    margin: 25px 0 10px 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    color: #ffffff;
+  }
+
+  .publication-time {
+    display: flex;
+  }
+  .publication-time__icon {
+    margin-right: 10px;
+  }
+  .publication-time__time-tracker {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
   }
 }
 @media screen and (min-width: 780px) {
@@ -1435,90 +1800,6 @@ template {
   flex-direction: column;
   justify-content: center;
 }
-.header-bg {
-  margin-bottom: 70px;
-}
-.header-bg__background {
-  -o-object-fit: cover;
-     object-fit: cover;
-  min-width: 320px;
-  max-width: 100%;
-  min-height: 400px;
-}
-
-.main-news {
-  display: flex;
-  justify-content: center;
-}
-.content-header {
-  color: #ffffff;
-  position: absolute;
-  top: 160px;
-  margin-left: 20px;
-}
-.content-header__tag-block {
-  display: flex;
-  max-width: 120px;
-  justify-content: space-between;
-}
-.content-header__tags_world {
-  background: #26A69A;
-}
-.content-header__tags_network {
-  background: #AB47BC;
-}
-.content-header__tags_art {
-  background: #5C6BC0;
-}
-.content-header__tags_science {
-  background: #29B6F6;
-}
-.content-header__tags_auto {
-  background: #26C6DA;
-}
-.content-header__tags_russia {
-  background: #EF5350;
-}
-.content-header__tags_it {
-  background: #FFCA28;
-}
-.tag {
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 5px 8px;
-  border-radius: 5px;
-}
-.tag__link {
-  text-decoration: none;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-.main-info__header {
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
-}
-
-.publication-time {
-  display: flex;
-}
-.publication-time__icon {
-  margin-right: 10px;
-}
-.publication-time__time-tracker {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-}
-
 .news-block {
   max-width: 1290px;
   margin: 0 auto;
@@ -1824,6 +2105,11 @@ template {
     min-width: 320px;
     width: 100%;
   }
+  .main__main-news {
+    position: absolute;
+    bottom: 178px;
+    margin-left: 250px;
+  }
   .main__load-button {
     margin-bottom: 100px;
   }
@@ -1834,89 +2120,6 @@ template {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  .header-bg {
-    margin-bottom: 70px;
-  }
-  .header-bg__background {
-    -o-object-fit: cover;
-       object-fit: cover;
-    min-width: 320px;
-    max-width: 100%;
-    min-height: 400px;
-  }
-
-  .main-news {
-    display: flex;
-    justify-content: center;
-  }
-  .content-header {
-    color: #ffffff;
-    position: absolute;
-    top: 160px;
-    margin-left: 20px;
-  }
-  .content-header__tag-block {
-    display: flex;
-    max-width: 120px;
-    justify-content: space-between;
-  }
-  .content-header__tags_world {
-    background: #26A69A;
-  }
-  .content-header__tags_network {
-    background: #AB47BC;
-  }
-  .content-header__tags_art {
-    background: #5C6BC0;
-  }
-  .content-header__tags_science {
-    background: #29B6F6;
-  }
-  .content-header__tags_auto {
-    background: #26C6DA;
-  }
-  .content-header__tags_russia {
-    background: #EF5350;
-  }
-  .content-header__tags_it {
-    background: #FFCA28;
-  }
-  .tag {
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 5px 8px;
-    border-radius: 5px;
-  }
-  .tag__link {
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-  }
-
-  .main-info__header {
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 57px;
-    color: #ffffff;
-  }
-
-  .publication-time {
-    display: flex;
-  }
-  .publication-time__icon {
-    margin-right: 10px;
-  }
-  .publication-time__time-tracker {
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: #ffffff;
   }
 }
 @media screen and (min-width: 768px) {

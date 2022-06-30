@@ -1,3 +1,5 @@
+
+
 @media screen and (min-width: 768px) {
     .header {
         min-width: 320px;
@@ -39,6 +41,16 @@
          }
      
          &__social {
+         }
+
+         &__main-news {
+            position: absolute;
+            bottom: 178px;
+            margin-left: 250px;
+         }
+
+         &__header-bg {
+            
          }
     }
 
@@ -128,6 +140,106 @@
     
         &__img {
             
+        }
+    }
+    
+    .header-bg {
+        position: relative;
+        margin-bottom: 70px;
+        &__background {
+            object-fit: cover;
+            min-width: 320px;
+            max-width: 100%;
+            min-height: 400px;
+        }
+    }
+    
+    
+    .main-news {
+        display: flex;
+        justify-content: center;
+        
+        &__content-header {
+        }
+    
+        &__publication-time {
+        }
+    }
+    
+    .content-header {
+        color: $white;
+        bottom: 120px;
+        margin-left: 20px;
+        max-width: 770px;
+        height: fit-content;
+    
+        &__tag-block {
+            display: flex;
+            
+        }
+    
+        &__tags {
+            margin-right: 20px;
+
+            &_world {
+                background: $world
+            }
+    
+            &_network {
+                background: $network
+            }
+    
+            &_art {
+                background: $art
+            }
+    
+            &_science {
+                background: $science
+            }
+    
+            &_auto {
+                background: $auto
+            }
+    
+            &_russia {
+                background: $russia;
+            }
+    
+            &_it {
+                background: $it;
+            }
+        }
+    
+        &__main-news {
+        }
+    }
+    
+    
+    .tag {
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 5px 8px;
+        border-radius: 5px;
+        &__link {
+            text-decoration: none;
+            @include Rubik (700, 14px, 17px, $white);
+        }
+    }
+    .main-info {
+        &__header {
+            margin: 25px 0 10px 0;
+            @include Rubik (700, 48px, 57px, $white);
+        }
+    }
+    .publication-time {
+        display: flex;
+    
+        &__icon {
+            margin-right: 10px;
+        }
+    
+        &__time-tracker {
+            @include Source (400, 14px, 18px, $white);
         }
     }
     
@@ -268,5 +380,9 @@
         &__img {
             
         }
+    }
+
+    .search-input {
+        display: none;
     }
 }

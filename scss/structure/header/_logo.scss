@@ -10,6 +10,17 @@
              position: relative;
              height: 60px;
          }
+
+
+         &__main-news {
+            position: absolute;
+            bottom: 178px;
+            margin-left: 20px;
+         }
+
+         &__header-bg {
+
+         }
      
          &__logo {
              margin-right: 30px;
@@ -50,7 +61,7 @@
         &__ul {
             display: flex;
             justify-content: flex-start;
-                gap: 10px;
+            gap: 10px;
         }
     
         &__li {
@@ -103,6 +114,107 @@
         .top-social {
 
 
+    }
+
+    .header-bg {
+        position: relative;
+        margin-bottom: 70px;
+        &__background {
+            object-fit: cover;
+            min-width: 320px;
+            max-width: 100%;
+            min-height: 400px;
+        }
+    }
+
+    .search-input {
+        display: none;
+    }
+    
+    
+    .main-news {
+        
+        display: flex;
+        justify-content: center;
+        
+        &__content-header {
+        }
+    
+        &__publication-time {
+        }
+    }
+    
+    .content-header {
+        color: $white;
+        margin-left: 20px;
+        height: fit-content;
+    
+        &__tag-block {
+            display: flex;
+            
+        }
+    
+        &__tags {
+            margin-right: 20px;
+            &_world {
+                background: $world
+            }
+    
+            &_network {
+                background: $network
+            }
+    
+            &_art {
+                background: $art
+            }
+    
+            &_science {
+                background: $science
+            }
+    
+            &_auto {
+                background: $auto
+            }
+    
+            &_russia {
+                background: $russia;
+            }
+    
+            &_it {
+                background: $it;
+            }
+        }
+    
+        &__main-news {
+        }
+    }
+    
+    
+    .tag {
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 5px 8px;
+        border-radius: 5px;
+        &__link {
+            text-decoration: none;
+            @include Rubik (700, 14px, 17px, $white);
+        }
+    }
+    .main-info {
+        &__header {
+            @include Rubik (700, 30px, 36px, $white);
+        }
+    }
+    .publication-time {
+        display: flex;
+    
+        &__icon {
+            margin-right: 10px;
+        }
+    
+        &__time-tracker {
+            @include Source (400, 14px, 18px, $white);
+        }
     }
     
 
