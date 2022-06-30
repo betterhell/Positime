@@ -44,7 +44,7 @@
 
 
     .menu-top {
-        display: block;
+        display: none;
         @include Rubik (700, 14px, 17px, $white);
     
         &__ul {
@@ -83,7 +83,6 @@
     }
 
     .upper-top {
-        
         margin: 0 15px;
         display: flex;
         justify-content: space-between;
@@ -183,6 +182,7 @@
     }
 
     .menu-top {
+        display: none;
         @include Rubik (700, 14px, 17px, $white);
     
         &__ul {

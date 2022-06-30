@@ -4,10 +4,10 @@
         align-items: center;
         z-index: 100;
         position: absolute;
-        top: 150px;
+        top: 100px;
         left: -100%;
         transition: all 0.5s ease-in-out;
-        height: 480px;
+        height: fit-content;
         width: 100%;
         visibility: hidden;
     
@@ -70,7 +70,9 @@
     }
     
     .search {
+        display: block;
         position: relative;
+        margin-bottom: 20px;
         button {
             padding: 8px;
             border: none; 
@@ -118,7 +120,7 @@
     }
     
     .links {
-        display: block;
+        display: none;;
         align-self: center;
         // margin: 20px 0 20px 20px;
         &__ul {
@@ -135,7 +137,7 @@
     }
     
     .social {
-        // display: none;
+        display: none;
         align-self: center;
         margin: 20px 0 22px 10px;
         &_links {

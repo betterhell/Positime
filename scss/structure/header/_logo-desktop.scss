@@ -1,135 +1,135 @@
-@media screen and (min-width: 768px) {
-    .header {
-        min-width: 320px;
-        max-width: 1920px;
-        position: relative;
-         &__top {
-             margin: 5px 20px;
+@media screen and (min-width: 1100px) {
+        .header {
+            min-width: 320px;
+            max-width: 1920px;
+            position: relative;
+             &__top {
+                 margin: 5px 20px;
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 position: relative;
+                 height: 60px;
+             }
+         
+             &__logo {
+                 
+             }
+    
+             &__menu-top {
+                display: block;
+             }
+         
+             &__burger {
+                display: none;
+             }
+    
+             &__search-button {
+                display: block
+             }
+         
+             &__burger-active {
+                 max-height: 480px;
+                 position: relative;
+                 padding: 15px 10px 10px 30px;
+             }
+         
+         
+             &__menu {
+             }
+         
+             &__social {
+    
+             }
+        }
+    
+        .menu-top {
+            display: block;
+            @include Rubik (700, 14px, 17px, $white);
+        
+            &__ul {
+                display: flex;
+                gap: 10px;
+            }
+        
+            &__li {
+                padding: 15px 0;
+        
+                &:hover {
+                    background: $menuHover;
+                    border-radius: 5px;
+                }
+            }
+        
+            &__link {
+                padding: 15px 25px;
+                text-decoration: none;
+                color: $black;
+        
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    
+        .search-button {
+            button {
+             cursor: pointer;
+             padding: 15px 15px;
+             border: none;
+             background: transparent;
+            }
+         }
+     
+         .upper-top {
+             margin: 0 15px;
              display: flex;
              justify-content: space-between;
              align-items: center;
-             position: relative;
-             height: 60px;
-         }
-     
-         &__logo {
-             
-         }
-
-         &__menu-top {
-            display: block;
-         }
-     
-         &__burger {
-            display: none;
-         }
-
-         &__search-button {
-            display: block
-         }
-     
-         &__burger-active {
-             max-height: 480px;
-             position: relative;
-             padding: 15px 10px 10px 30px;
-         }
-     
-     
-         &__menu {
-         }
-     
-         &__social {
-
-         }
-    }
-
-
-    .menu-top {
-        display: block;
-        @include Rubik (700, 14px, 17px, $white);
-    
-        &__ul {
-            display: flex;
-            gap: 10px;
-        }
-    
-        &__li {
-            padding: 15px 0;
-    
-            &:hover {
-                background: $menuHover;
-                border-radius: 5px;
-            }
-        }
-    
-        &__link {
-            padding: 10px 15px;
-            text-decoration: none;
-            color: $black;
-    
-            &:hover {
-                color: $white;
-            }
-        }
-    }
-
-    .search-button {
-        button {
-         cursor: pointer;
-         padding: 15px 15px;
-         border: none;
-         background: transparent;
-        }
-     }
- 
-     .upper-top {
- 
-         margin: 0 15px;
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         border-bottom: 1px solid $lightGray;
-         &__search-links {
-         }
-     }
-     .header {
-     
-         &__upper-top {
-         
-         }
-     
-         &__top-social {
-         }
-     }
-     .top-links {
-     
-         &__ul {
-             display: flex;
-             gap: 30px;
-         }
-     
-         &__li {
- 
-         }
-     
-         &__link {
-             @include Source (400, 12px, 15px, #BDBDBD);
-             text-decoration: none;
- 
-             &:hover {
-                 color: $orange;
+             border-bottom: 1px solid $lightGray;
+             &__search-links {
              }
          }
-     }
-     .top-social {
-     
-         &__links {
- 
+         .header {
+         
+             &__upper-top {
+             
+             }
+         
+             &__top-social {
+             }
          }
+         .top-links {
+         
+             &__ul {
+                 display: flex;
+                 gap: 30px;
+             }
+         
+             &__li {
      
-         &__img {
-           
+             }
+         
+             &__link {
+                 @include Source (400, 12px, 15px, #BDBDBD);
+                 text-decoration: none;
+     
+                 &:hover {
+                     color: $orange;
+                 }
+             }
          }
-     }
+         .top-social {
+         
+        &__links {
+     
+        }
+        
+        &__img {
+          
+        
+    }
+        
+}
     
 }
