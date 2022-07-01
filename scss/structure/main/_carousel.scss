@@ -123,6 +123,11 @@
     &__text {
        @include Rubik (700, 18px, 21px, $white);
     }
+
+    &__carousel-tags {
+        display: flex;
+        gap: 15px;
+    }
 }
 
 .content-header {

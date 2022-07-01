@@ -2035,6 +2035,10 @@ template {
   line-height: 21px;
   color: #ffffff;
 }
+.card-info__carousel-tags {
+  display: flex;
+  gap: 15px;
+}
 
 @media screen and (max-width: 768px) {
   .carousel-block {
