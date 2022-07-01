@@ -1,5 +1,11 @@
+.bottom-footer {
+    margin: 70px 15px 10px;
+    gap: 5px;
+ }
+
 .rights {
     &__text {
+        margin-bottom: 10px;
         @include Source (400, 12px, 15px, $standartGray);
         text-align: center;
     }

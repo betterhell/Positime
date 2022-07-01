@@ -54,10 +54,12 @@
     }
 
     .wheel {
+        
         display: flex;
         transition: all 0.3s ease-in-out;
         position: absolute;
         bottom: 50px;
+        gap: 15px;
 
         &:first-child {
             margin-left: 25px;
@@ -68,6 +70,7 @@
         }
     
         &__card {
+            margin-right: 0;
         }
     
         &__tags {

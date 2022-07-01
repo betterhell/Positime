@@ -41,6 +41,13 @@
              &__social {
     
              }
+
+             &__main-news {
+                position: absolute;
+                bottom: 210px;
+                margin-left: 315px;
+
+            }
         }
     
         .menu-top {
@@ -274,9 +281,6 @@
                     background: $it;
                 }
             }
-        
-            &__main-news {
-            }
         }
         
         
@@ -309,3 +313,34 @@
         }
         
 }        
+
+@media screen and (min-width: 1200px) {
+    .menu-top {
+        display: block;
+        @include Rubik (700, 14px, 17px, $white);
+    
+        &__ul {
+            display: flex;
+            gap: 30px;
+        }
+    
+        &__li {
+            padding: 15px 0;
+    
+            &:hover {
+                background: $menuHover;
+                border-radius: 5px;
+            }
+        }
+    
+        &__link {
+            padding: 15px 25px;
+            text-decoration: none;
+            color: $black;
+    
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

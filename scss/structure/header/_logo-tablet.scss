@@ -386,3 +386,13 @@
         display: none;
     }
 }
+
+@media screen and (min-width: 695px) {
+    .header {
+        &__main-news {
+            position: absolute;
+            bottom: 178px;
+            margin-left: 20px;
+         }
+    }
+}
