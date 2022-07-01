@@ -1,7 +1,8 @@
 const sliderLine = document.querySelector(".wheel");
+const clwdth = document.documentElement.clientWidth;
 
 let offset = 0;
-const slider = () => {
+if (clwdth < 600) {
   sliderLine.addEventListener("touchmove", () => {
     offset += 240;
     if (offset > 240) {
@@ -9,6 +10,4 @@ const slider = () => {
     }
     sliderLine.style.left = -offset + "px";
   });
-};
-
-slider();
+}

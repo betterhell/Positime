@@ -45,7 +45,7 @@
              &__main-news {
                 position: absolute;
                 bottom: 210px;
-                margin-left: 315px;
+                margin-left: 200px;
 
             }
         }
@@ -315,6 +315,15 @@
 }        
 
 @media screen and (min-width: 1200px) {
+    .header {
+        &__main-news {
+            position: absolute;
+            bottom: 210px;
+            margin-left: 315px;
+
+        }
+    }
+
     .menu-top {
         display: block;
         @include Rubik (700, 14px, 17px, $white);
