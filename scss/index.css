@@ -590,6 +590,15 @@ template {
   position: relative;
   height: 60px;
 }
+.header__progress-line {
+  height: 5px;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  background-color: #FFA726;
+  width: 100%;
+}
 .header__main-news {
   position: absolute;
   bottom: 178px;
@@ -902,6 +911,15 @@ template {
     align-items: center;
     position: relative;
     height: 60px;
+  }
+  .header__progress-line {
+    height: 5px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #FFA726;
+    width: 100%;
   }
   .header__burger {
     display: block;
@@ -1297,6 +1315,15 @@ template {
     align-items: center;
     position: relative;
     height: 60px;
+  }
+  .header__progress-line {
+    height: 5px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #FFA726;
+    width: 100%;
   }
   .header__menu-top {
     display: block;
