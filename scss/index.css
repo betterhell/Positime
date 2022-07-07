@@ -1392,11 +1392,12 @@ template {
   .search-input__input {
     max-width: 1920px;
     min-width: 320px;
-    width: 97.3%;
+    width: 98.3%;
     padding: 0;
     height: 120px;
     border: 0;
     background: #F2F2F2;
+    outline: none;
   }
   .search-input__input[placeholder] {
     padding-left: 20px;
@@ -1594,6 +1595,7 @@ template {
     height: 120px;
     border: 0;
     background: #F2F2F2;
+    outline: none;
   }
   .search-input__input[placeholder] {
     padding-left: 20px;

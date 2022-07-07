@@ -152,12 +152,12 @@
 		&__input {
             max-width: 1920px;
             min-width: 320px;
-            width: 97.3%;
+            width: 98.3%;
             padding: 0;
             height: 120px;
             border: 0;
             background: $lightGray;
-
+            outline: none;
 		}
 
 
@@ -369,6 +369,7 @@
             height: 120px;
             border: 0;
             background: $lightGray;
+            outline: none;
 
 		}
 
