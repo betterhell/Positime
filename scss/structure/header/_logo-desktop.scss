@@ -150,9 +150,9 @@
 		}
 
 		&__input {
-            max-width: 1900px;
+            max-width: 1920px;
             min-width: 320px;
-            width: 100%;
+            width: 97.3%;
             padding: 0;
             height: 120px;
             border: 0;
@@ -160,12 +160,14 @@
 
 		}
 
+
         &__input[placeholder] {
             padding-left: 20px;
-            @include Rubik (700, 48px, 57px, #686868)
+            @include Rubik (700, 48px, 57px, #686868);
+            
         }
         &__input::placeholder {
-            @include Rubik (700, 48px, 57px, #BDBDBD)
+            @include Rubik (700, 48px, 57px, #BDBDBD);
         }
     }
 
@@ -352,4 +354,36 @@
             }
         }
     }
+
+    .search-input {
+        display: none;
+        position: relative;
+		&__label {
+		}
+
+		&__input {
+            max-width: 1900px;
+            min-width: 320px;
+            width: 99%;
+            padding: 0;
+            height: 120px;
+            border: 0;
+            background: $lightGray;
+
+		}
+
+
+        &__input[placeholder] {
+            padding-left: 20px;
+            @include Rubik (700, 48px, 57px, #686868);
+            
+        }
+        &__input::placeholder {
+            @include Rubik (700, 48px, 57px, #BDBDBD);
+        }
+    }
+
+    .search-button__search-input_active {
+        display: block;
+   }
 }
